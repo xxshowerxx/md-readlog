@@ -1,0 +1,49 @@
+{
+  "name": "md-readlog",
+  "productName": "MD-Readlog",
+  "version": "0.1.3",
+  "private": true,
+  "license": "GPL-3.0-or-later",
+  "description": "Windows Markdown reader",
+  "main": "dist/main/main/main.js",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "vite build && tsc -p tsconfig.main.json",
+    "typecheck": "tsc --noEmit -p tsconfig.json && tsc --noEmit -p tsconfig.main.json",
+    "start": "npm run build && electron .",
+    "package": "npm run build && electron-forge package",
+    "make": "npm run build && electron-forge make",
+    "test": "npm run build && playwright test",
+    "build:main": "tsc -p tsconfig.main.json",
+    "dev:app": "node scripts/dev-electron.mjs",
+    "repo:check": "node scripts/repo-safety.mjs",
+    "repo:check:working": "node scripts/repo-safety.mjs --scope=working"
+  },
+  "config": {
+    "forge": "./forge.config.cjs"
+  },
+  "dependencies": {
+    "@heroui/react": "3.2.6",
+    "@heroui/styles": "3.2.6",
+    "@tailwindcss/vite": "4.3.3",
+    "react": "19.3.0",
+    "react-dom": "19.3.0",
+    "react-markdown": "10.1.0",
+    "remark-gfm": "4.0.1",
+    "tailwindcss": "4.3.3"
+  },
+  "devDependencies": {
+    "@electron-forge/cli": "7.11.2",
+    "@electron-forge/maker-dmg": "7.11.2",
+    "@electron-forge/maker-squirrel": "7.11.2",
+    "@electron-forge/maker-zip": "7.11.2",
+    "@playwright/test": "1.63.0",
+    "@types/node": "26.6.2",
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
+    "@vitejs/plugin-react": "6.1.1",
+    "electron": "41.7.1",
+    "typescript": "7.0.2",
+    "vite": "8.3.0"
+  }
+}

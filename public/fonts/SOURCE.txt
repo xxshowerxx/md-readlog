@@ -1,0 +1,6 @@
+Source Han Sans SC variable WOFF2 (Adobe Fonts)
+Source: https://github.com/adobe-fonts/source-han-sans
+Revision: a4f7cf94edfb9d7ffbdfc4841de276358bd7e0f2
+File: Variable/WOFF2/OTF/SourceHanSansSC-VF.otf.woff2
+SHA-256: 085cc88c530b9c434165ab926f81608a55b24e60e05719f3d41340ac45d9c62f
+License: SIL Open Font License 1.1; see LICENSE.txt.
